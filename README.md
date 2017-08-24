@@ -59,9 +59,9 @@ The original CSV file had 261 line breaks within individual data fields out of o
 
    ``` pv Data_Feed.csv | grep "^\".*\"\r" > data_feed_good.csv  ```
 
-   b. Filter out lines that begin with an "end" quote and comma  “
+   b. Filter out lines that begin with an end-quote followed by a comma.
    
-  ``` pv data_feed_good.csv | grep -v "^\",.*\r" > data_feed_good_2.csv ```
+   ``` pv data_feed_good.csv | grep -v "^\",.*\r" > data_feed_good_2.csv ```
 
 Note:  These data cleansing steps remove 0.001305% of data.
 
