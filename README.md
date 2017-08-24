@@ -57,22 +57,22 @@ The original CSV file had 261 line breaks within individual data fields out of o
 
    a. Select for lines that begin and end with a quote.
 
-   pv Data_Feed.csv | grep "^\".*\"\r" > data_feed_good.csv  
+   ``` pv Data_Feed.csv | grep "^\".*\"\r" > data_feed_good.csv  ```
 
    b. Filter out lines that begin with an "end" quote and comma  “
    
-   pv data_feed_good.csv | grep -v "^\",.*\r" > data_feed_good_2.csv 
+  ``` pv data_feed_good.csv | grep -v "^\",.*\r" > data_feed_good_2.csv ```
 
 Note:  These data cleansing steps remove 0.001305% of data.
 
 3. Convert data to Parquet.
 4. Upload data to Amazon S3 bucket.
 
-   aws s3 cp --rec clean_data.parquet/ s3://sarah-usaspendingfy2015/clean_data.parquet
+   ``` aws s3 cp --rec clean_data.parquet/ s3://sarah-usaspendingfy2015/clean_data.parquet ```
 
 5.  Load the data into Spark Data Frame
 
-    val df = sqlContext.read.parquet("s3://sarah-usaspendingfy2015/clean_data.parquet")
+    ``` val df = sqlContext.read.parquet("s3://sarah-usaspendingfy2015/clean_data.parquet") ```
 
 
 
