@@ -1,4 +1,5 @@
-# usaspend
+## Annual Revenue Vs. Executive Pay for Recipients of U.S. Federal Funds
+
 The JSON file is a Zeppelin notebook used for analysis on correlation between reported Annual Revenue, Obligated Funds, and reported Executive Pay for recipients of U.S. Federal funding (tax payer money). The project uses Scala Spark to query data. The data source used is USASpending.gov.
 
 USAspending.gov is the publicly accessible, searchable website mandated by the Federal Funding Accountability and Transparency Act of 2006 to give the American public access to information on how their tax dollars are spent.
