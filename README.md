@@ -27,11 +27,11 @@ ETL steps – 90% of work in data analysis.
 
 ### Questions
 
-What companies have the most federal dollars obligated?
-What companies have the highest self-reported annual revenue?
-What companies have the highest executive compensation?
-What companies have the highest executive payout as a percentage of total revenue?
-What companies have the highest executive payout as a percentage of sum of dollars obligated?
+* What companies have the most federal dollars obligated?
+* What companies have the highest self-reported annual revenue?
+* What companies have the highest executive compensation?
+* What companies have the highest executive payout as a percentage of total revenue?
+* What companies have the highest executive payout as a percentage of sum of dollars obligated?
 
 For the purposes of this project, this analysis is limited to FY 2015 data only,  8.71 GB, which I partition into Parquet format.
 
