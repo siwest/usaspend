@@ -17,7 +17,7 @@ For the purpose of this study, we look at FY 2015 data only.
   * Data set is large enough that it requires distributed system to perform analysis. 
   * Tried running on a 4 Core MacBook Pro with 16 GB of memory, with jobs split among 4 cores
   * Each job run took 2-3 minutes to complete
-  * Ran into memory leaks on complex calculations (getting % of compensation/annualRevenue)
+  * Ran out of memory in doing complex calculations (getting % of compensation/annualRevenue)
 * Spark in MapReduce: Cluster EMR setup with Spark
   * Each job run took anywhere between 10-58 seconds to complete
   * Loading Spark DataFrames and Parquet files allow more flexible/computationally efficient querying. (Parquet is Spark’s preferred serialization format. Has efficient built-in compression and encoding scheme, on a per-column level.)
