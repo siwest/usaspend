@@ -28,6 +28,11 @@ ETL steps – 90% of work in data analysis.
 ### Questions
 
 * What companies have the most federal dollars obligated?
+  * Lockheed Martin Coporation
+  * Raytheon Company
+  * The Boeing Company
+  * McKesson Corporation
+  * Northrop Grumman
 * What companies have the highest self-reported annual revenue?
 * What companies have the highest executive compensation?
 * What companies have the highest executive payout as a percentage of total revenue?
