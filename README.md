@@ -33,10 +33,34 @@ ETL steps – 90% of work in data analysis.
   * The Boeing Company
   * McKesson Corporation
   * Northrop Grumman
+  * SAIC
 * What companies have the highest self-reported annual revenue?
+  * Sierra Nevada Corporation
+  * Xerox Corporation
+  * Geological & Econ
+  * D & L Waste Equipment
+  * Apple Inc.
+  * Metal-Flex Welded
+  * Verizon
+  * DRS
+  * BAE Systms
 * What companies have the highest executive compensation?
-* What companies have the highest executive payout as a percentage of total revenue?
+  * Schafer Aerospace
+  * Schafer Corporation
+  * Research Analysis Corporation
+  * ASE Direct
+* What companies have the highest executive payout as a percentage of total revenue? ** Varies by filter, answers given below are with no filter
+  * The Mil Corporation
+  * Alvarex & Associates
+  * Wood Construction
+  * General Dynamics
 * What companies have the highest executive payout as a percentage of sum of dollars obligated?
+  * Countertrade
+  * Lawrence Livermore
+  * Goodrich Corporation
+  * CSI Aviation
+  * Wildflower International
+  * Siemens
 
 For the purposes of this project, this analysis is limited to FY 2015 data only,  8.71 GB, which I partition into Parquet format.
 
@@ -92,4 +116,5 @@ Note:  These data cleansing steps remove 0.001305% of data.
 * Need to deal with duplicate and differing vendor-reported fields.
 * Need to deal with mismatched vendor names like “BOEING COMPANY, THE” and “THE BOEING COMPANY”.
   * May use Machine Learning approach
+    * Bag of Words - TF/IDF to match companies based on latest reported info.
 
